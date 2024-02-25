@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="js/aframe-environment-component.js"></script>
+  </head>
+  <body> 
+    
+    <a-scene environment="preset: default; fog: 0; playArea: 1.0; groundYScale: 5.00; groundTexture: ; groundColor: #002200; groundColor2: #003300">
+        
+        <a-box color="#689f38"
+        width="8" height="4.5" depth="0.2"
+        position="0 2 -7"
+        rotation="90 0 0"
+        >
+    <a-circle position="4 0 0.11" side="double" rotation="90 90 90" color="#333"></a-circle>
+    
+    </a-box>
+    <a-circle position="-4 2 -6.89" side="double" color="#ffc107"></a-circle>
+        <!-- 
+        <a-cylinder
+        color="blue"
+        depth="4"
+        radius="3"
+        position="0 1"
+        >
+        <a-box
+        position="2 1"
+        ></a-box>
+        <a-cylinder position="2 2"></a-cylinder>
+        </a-cylinder>  -->
+        <a-cylinder color="#616161"
+            heigt = "2"
+            radius = "2"
+            segments-radial ="6"
+            open-ended = "true"
+            side = "double"
+            rotation="0 0 0"
+            position="0 0 -4"
+            scale="1 1 1"
+        ></a-cylinder>
+      </a-scene> 
+      
+  </body>
+</html>
