@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cozy Coffee Break</title>
+    <script src="./script/aframe.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+        <!-- assets -->
+        <a-assets>
+            <img id="stones" src="./resources/floor-stones.jpg" alt="">
+            <img id="marbles" src="./resources/Gravel0186_3_download600.jpg" alt="">
+            <img id="tiles" src="./resources/tiles.png" alt="">
+            <img id="milo" src="./resources/milo2.jpg" alt="">
+            <img id="milk" src="./resources/milk.jpg" alt="">
+            <img id="ceramic" src="./resources/ceramic.jpg" alt="">
+        </a-assets>
+      <!-- Sky -->
+      <a-sky color="#87CEEB"></a-sky>
+
+      <!-- Ground -->
+      <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" src="./resources/grass.jpg" color="#7CFC00"></a-plane>
+    
+      <a-cylinder position="0 0 0" radius="4"
+        material="
+        src: #stones;
+        repeat: 5 5 5 5;
+        roughness: 2;
+        normalMap: #stones;
+        normal-texture-repeat: 2 2;"
+        height="0.1">
+      >
+     </a-cylinder>
+     <a-cylinder position="-14.5 0 0" radius="4"
+        material="
+        src: #stones;
+        repeat: 5 5 5 5;
+        roughness: 2;
+        normalMap: #stones;
+        normal-texture-repeat: 2 2;"
+        height="0.1">
+      >
+     </a-cylinder>
+     <a-cylinder position="0 0 -14.5" radius="4"
+        material="
+        src: #stones;
+        repeat: 5 5 5 5;
+        roughness: 2;
+        normalMap: #stones;
+        normal-texture-repeat: 2 2;"
+        height="0.1">
+      >
+     </a-cylinder>
+     <a-cylinder position="14.5 0 0" radius="4"
+        material="
+        src: #stones;
+        repeat: 5 5 5 5;
+        roughness: 2;
+        normalMap: #stones;
+        normal-texture-repeat: 2 2;"
+        height="0.1">
+      >
+     </a-cylinder>
+     <a-cylinder position="0 0 14.5" radius="4"
+        material="
+        src: #stones;
+        repeat: 5 5 5 5;
+        roughness: 2;
+        normalMap: #stones;
+        normal-texture-repeat: 2 2;"
+        height="0.1">
+      >
+     </a-cylinder>
+
+     <!-- fisrt batch -->
+     <a-box position="0 0 5" radius="4"
+     material="
+     src: #tiles;
+     repeat: 5 5 5 5;
+     roughness: 2;
+     normalMap: #stones;
+     normal-texture-repeat: 2 2;"
+     height="0.1">
+   >
+  </a-box>
+  <a-box position="0 0 6.5" radius="4"
+     material="
+     src: #tiles;
+     repeat: 5 5 5 5;
+     roughness: 2;
+     normalMap: #stones;
+     normal-texture-repeat: 2 2;"
+     height="0.1">
+   >
+  </a-box>
+  <a-box position="0 0 8" radius="4"
+  material="
+  src: #tiles;
+  repeat: 5 5 5 5;
+  roughness: 2;
+  normalMap: #stones;
+  normal-texture-repeat: 2 2;"
+  height="0.1">
+>
+</a-box>
+<a-box position="0 0 9.5" radius="4"
+  material="
+  src: #tiles;
+  repeat: 5 5 5 5;
+  roughness: 2;
+  normalMap: #stones;
+  normal-texture-repeat: 2 2;"
+  height="0.1">
+>
+
+
+</a-box>
+
+<!-- second batch -->
+<a-box position="5 0 0" radius="4"
+     material="
+     src: #tiles;
+     repeat: 5 5 5 5;
+     roughness: 2;
+     normalMap: #stones;
+     normal-texture-repeat: 2 2;"
+     height="0.1">
+   >
+  </a-box>
+  <a-box position="6.5 0 0" radius="4"
+     material="
+     src: #tiles;
+     repeat: 5 5 5 5;
+     roughness: 2;
+     normalMap: #stones;
+     normal-texture-repeat: 2 2;"
+     height="0.1">
+   >
+  </a-box>
+  <a-box position="8 0 0" radius="4"
+  material="
+  src: #tiles;
+  repeat: 5 5 5 5;
+  roughness: 2;
+  normalMap: #stones;
+  normal-texture-repeat: 2 2;"
+  height="0.1">
+>
+</a-box>
+<a-box position="9.5 0 0" radius="4"
+  material="
+  src: #tiles;
+  repeat: 5 5 5 5;
+  roughness: 2;
+  normalMap: #stones;
+  normal-texture-repeat: 2 2;"
+  height="0.1">
+>
+
+</a-box>
+
+</a-box>
+<!-- third batch -->
+<a-box position="-5 0 0" radius="4"
+     material="
+     src: #tiles;
+     repeat: 5 5 5 5;
+     roughness: 2;
+     normalMap: #stones;
+     normal-texture-repeat: 2 2;"
+     height="0.1">
+   >
+  </a-box>
+  <a-box position="-6.5 0 0" radius="4"
+     material="
+     src: #tiles;
+     repeat: 5 5 5 5;
+     roughness: 2;
+     normalMap: #stones;
+     normal-texture-repeat: 2 2;"
+     height="0.1">
+   >
+  </a-box>
+  <a-box position="-8 0 0" radius="4"
+  material="
+  src: #tiles;
+  repeat: 5 5 5 5;
+  roughness: 2;
+  normalMap: #stones;
+  normal-texture-repeat: 2 2;"
+  height="0.1">
+>
+</a-box>
+<a-box position="-9.5 0 0" radius="4"
+  material="
+  src: #tiles;
+  repeat: 5 5 5 5;
+  roughness: 2;
+  normalMap: #stones;
+  normal-texture-repeat: 2 2;"
+  height="0.1">
+>
+
+</a-box>
+
+</a-box>
+
+<!-- fourth batch -->
+<a-box position="0 0 -5" radius="4"
+material="
+src: #tiles;
+repeat: 5 5 5 5;
+roughness: 2;
+normalMap: #stones;
+normal-texture-repeat: 2 2;"
+height="0.1">
+>
+</a-box>
+<a-box position="0 0 -6.5" radius="4"
+material="
+src: #tiles;
+repeat: 5 5 5 5;
+roughness: 2;
+normalMap: #stones;
+normal-texture-repeat: 2 2;"
+height="0.1">
+>
+</a-box>
+<a-box position="0 0 -8" radius="4"
+material="
+src: #tiles;
+repeat: 5 5 5 5;
+roughness: 2;
+normalMap: #stones;
+normal-texture-repeat: 2 2;"
+height="0.1">
+>
+</a-box>
+<a-box position="0 0 -9.5" radius="4"
+material="
+src: #tiles;
+repeat: 5 5 5 5;
+roughness: 2;
+normalMap: #stones;
+normal-texture-repeat: 2 2;"
+height="0.1">
+>
+
+
+</a-box>
+
+      <!-- Table -->
+      <a-cylinder position="0 1.3 0" radius="2" scale="1 0.1 1" 
+      material=" src: #marbles; size: 5 5; repeat: 5 5; normalMap: #marbles; normal-texture-repeat: 2 2;" 
+      geometry="">
+
+            <!-- Cup 1 -->
+            <a-cylinder position="0 2.5 -2" material="src:#ceramic;repeat:6 1;roughness:2" metalness="0.1" radius="0.15" rotation="0 -86 0" height="3"></a-cylinder>
+            <a-cylinder position="0.5 2.5 -2" material="src:#ceramic;repeat:6 1;" radius="0.15" rotation="0 -86 0" height="3"></a-cylinder>
+            <!-- MiLo Tin -->
+            <a-cylinder position="0 4.1 0"  metalness="0.75" radius="0.15" height="0.2" color="#FFF"></a-cylinder>
+            <a-cylinder position="0 2.5 0" material="src:#milo;repeat:2 1;" radius="0.15" rotation="0 -86 0" height="3"></a-cylinder>
+
+            <!-- Milk Tin -->
+            <a-cylinder position="-0.7 4.1 0"  metalness="0.75" radius="0.15" height="0.2" color="#FFF"></a-cylinder>
+            <a-cylinder position="-0.7 2.5 0" material="src:#milk; size: 2 2;repeat:2 1;" rotation="0 -86 0" radius="0.15" height="3"></a-cylinder>
+            
+        
+            <a-box position="0 -5 0" width="2" height="0.1" depth="1.5" color="#8B4513" material="" geometry="" scale="0.73 10 1.01"></a-box>
+            
+            <a-cylinder position="-0.68084 -6.441 -0.70503" radius="0.1" height="10" color="#8B4513" material="" geometry="height: 12"></a-cylinder>
+            <a-cylinder position="-0.68084 -6.441 0.70741" radius="0.1" height="10" color="#8B4513" material="" geometry="height: 12"></a-cylinder>
+            <a-cylinder position="0.6706 -6.441 0.70741" radius="0.1" height="10" color="#8B4513" material="" geometry="height: 12"></a-cylinder>
+            <a-cylinder position="0.6706 -6.44085 -0.74955" radius="0.1" height="10" color="#8B4513" material="" geometry="height: 12"></a-cylinder>
+        
+        </a-cylinder>
+
+      <!-- Chair one -->
+
+      <a-box height="0.35" material="" geometry="" position="2.19242 0.95256 0.35432" scale="1 0.37 1.3" rotation="0 92.4404377086119 0">
+        <a-box height="5" material="" geometry="" position="-0.0057 1.82205 0.42565" scale="1 0.66 0.14"></a-box>
+        <a-cylinder radius="0.1" position="0.36468 -1.20137 -0.40361" material="metalness: 0.51" geometry="height: 1.52" scale="1.03 1.61 0.72"></a-cylinder>
+        <a-cylinder radius="0.1" position="-0.38535 -1.20137 -0.404" material="metalness: 0.51" geometry="height: 1.52" scale="1.03 1.61 0.72"></a-cylinder>
+        <a-cylinder radius="0.1" position="-0.385 -1.14804 0.41996" material="metalness: 0.51" geometry="height: 1.52" scale="1.03 1.61 0.72"></a-cylinder>
+        <a-cylinder radius="0.1" position="0.365 -1.22597 0.41276" material="metalness: 0.51" geometry="height: 1.52" scale="1.03 1.61 0.72"></a-cylinder>
+    </a-box>
+    
+    <a-box height="0.35" material="" geometry="" position="-2.19242 0.95256 0.35432" scale="1 0.37 1.3" rotation="0 -92.4404377086119 0">
+        <a-box height="5" material="" geometry="" position="-0.0057 1.82205 0.42565" scale="1 0.66 0.14"></a-box>
+        <a-cylinder radius="0.1" position="0.36468 -1.20137 -0.40361" material="metalness: 0.51" geometry="height: 1.52" scale="1.03 1.61 0.72"></a-cylinder>
+        <a-cylinder radius="0.1" position="-0.38535 -1.20137 -0.404" material="metalness: 0.51" geometry="height: 1.52" scale="1.03 1.61 0.72"></a-cylinder>
+        <a-cylinder radius="0.1" position="-0.385 -1.14804 0.41996" material="metalness: 0.51" geometry="height: 1.52" scale="1.03 1.61 0.72"></a-cylinder>
+        <a-cylinder radius="0.1" position="0.365 -1.22597 0.41276" material="metalness: 0.51" geometry="height: 1.52" scale="1.03 1.61 0.72"></a-cylinder>
+    </a-box>
+
+    <!-- Table 2 -->
+    <a-cylinder position="-14.5 1.3 0" radius="2" scale="1 0.1 1" 
+      material=" src: #marbles; size: 5 5; repeat: 5 5; normalMap: #marbles; normal-texture-repeat: 2 2;" 
+      geometry="">
+
+            <!-- MiLo Tin -->
+            <a-cylinder position="0 2.5 0" radius="0.2" height="3" color="#CD853F"></a-cylinder>
+
+            
+        
+            <a-box position="0 -5 0" width="2" height="0.1" depth="1.5" color="#8B4513" material="" geometry="" scale="0.73 10 1.01"></a-box>
+            
+            <a-cylinder position="-0.68084 -6.441 -0.70503" radius="0.1" height="10" color="#8B4513" material="" geometry="height: 12"></a-cylinder>
+            <a-cylinder position="-0.68084 -6.441 0.70741" radius="0.1" height="10" color="#8B4513" material="" geometry="height: 12"></a-cylinder>
+            <a-cylinder position="0.6706 -6.441 0.70741" radius="0.1" height="10" color="#8B4513" material="" geometry="height: 12"></a-cylinder>
+            <a-cylinder position="0.6706 -6.44085 -0.74955" radius="0.1" height="10" color="#8B4513" material="" geometry="height: 12"></a-cylinder>
+        
+    </a-cylinder>
+    
+    <!-- Table 3 -->
+    <a-cylinder position="0 1.3 -14.5" radius="2" scale="1 0.1 1" 
+      material=" src: #marbles; size: 5 5; repeat: 5 5; normalMap: #marbles; normal-texture-repeat: 2 2;" 
+      geometry="">
+
+            <!-- MiLo Tin -->
+            <a-cylinder position="0 2.5 0" radius="0.2" height="3" color="#CD853F"></a-cylinder>
+
+            
+        
+            <a-box position="0 -5 0" width="2" height="0.1" depth="1.5" color="#8B4513" material="" geometry="" scale="0.73 10 1.01"></a-box>
+            
+            <a-cylinder position="-0.68084 -6.441 -0.70503" radius="0.1" height="10" color="#8B4513" material="" geometry="height: 12"></a-cylinder>
+            <a-cylinder position="-0.68084 -6.441 0.70741" radius="0.1" height="10" color="#8B4513" material="" geometry="height: 12"></a-cylinder>
+            <a-cylinder position="0.6706 -6.441 0.70741" radius="0.1" height="10" color="#8B4513" material="" geometry="height: 12"></a-cylinder>
+            <a-cylinder position="0.6706 -6.44085 -0.74955" radius="0.1" height="10" color="#8B4513" material="" geometry="height: 12"></a-cylinder>
+        
+    </a-cylinder>
+
+    <!-- Table 4 -->
+    <a-cylinder position="14.5 1.3 0" radius="2" scale="1 0.1 1" 
+      material=" src: #marbles; size: 5 5; repeat: 5 5; normalMap: #marbles; normal-texture-repeat: 2 2;" 
+      geometry="">
+
+            <!-- MiLo Tin -->
+            <a-cylinder position="0 2.5 0" radius="0.2" height="3" color="#CD853F"></a-cylinder>
+
+            
+        
+            <a-box position="0 -5 0" width="2" height="0.1" depth="1.5" color="#8B4513" material="" geometry="" scale="0.73 10 1.01"></a-box>
+            
+            <a-cylinder position="-0.68084 -6.441 -0.70503" radius="0.1" height="10" color="#8B4513" material="" geometry="height: 12"></a-cylinder>
+            <a-cylinder position="-0.68084 -6.441 0.70741" radius="0.1" height="10" color="#8B4513" material="" geometry="height: 12"></a-cylinder>
+            <a-cylinder position="0.6706 -6.441 0.70741" radius="0.1" height="10" color="#8B4513" material="" geometry="height: 12"></a-cylinder>
+            <a-cylinder position="0.6706 -6.44085 -0.74955" radius="0.1" height="10" color="#8B4513" material="" geometry="height: 12"></a-cylinder>
+        
+        </a-cylinder>
+      <!-- Light -->
+      <a-light type="ambient" color="#FFFFFF"></a-light>
+      <a-light type="directional" position="-3 3 1" target="#table"></a-light>
+
+      <!-- Camera and Controls
+      <a-entity camera look-controls position="0 1.6 0"></a-entity> -->
+    </a-scene>
+  </body>
+</html>

@@ -5,14 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./script/aframe.js"></script>
-</head>
-<body>
-    <a-scene>
-        <a-cylinder radius="4" depth="1" height="0.3" rotation="180 0 0" src="./resources/crate.jpg" position="0 0 -7">
+    <script src="js/aframe-environment-component.js"></script>
+  </head>
+  <body> 
+    
+    <a-scene environment="preset: default; fog: 0; playArea: 1.0; groundYScale: 5.00;">
+        
+        <!-- <a-sky src="./resources/sky.jpg"></a-sky>
+        <a-plane width="50%" height="50%" position="0.5 0.5 0.5" src="./resources/grass.jpg" rotation="-90 0 0"></a-plane> -->
+        <!-- <a-cylinder radius="4" depth="1" height="0.3" rotation="180 0 0" position="" src="./resources/glass.jpg" position="0 0 -7">
             <a-box height="3" position="-2 1.36 0" rotation="0 45 0" ></a-box>
             <a-box height="3" position="0 1.36 2" ></a-box>
             <a-box height="3" position="2 1.36 0" rotation="0 45 0" ></a-box>
             <a-box height="3" position="0 1.36 -2" width="1" depth="1" ></a-box>
+        </a-cylinder> -->
+        <a-cylinder
+        radius="0.21"  position="0.0413 0.6812 -4.3994" scale="1 0.54 1" src="./resources//milo.jpg"
+        >
+        
+        </a-cylinder>
+
+<a-entity geometry="primitive: cylinder; height: 1.21; segmentsHeight: 17; radius: 0.24" position="0 2.06173 0" scale="0.72 0.34 0.74" layer="" real-world-meshing=""><a-entity material="shader: flat; transparent: true" geometry="primitive: plane; height: 0; width: 0">        <a-entity geometry="primitive: torus; radius: 0.48; radiusTubular: 0.05; segmentsTubular: 29; arc: 180" position="0.15659 2.05502 0.01112" rotation="0 0 -89.93145552373402" scale="0.31 0.32 0.57"></a-entity>
+</a-entity></a-entity>
+        <!-- <a-entity geometry="primitive: cylinder;  radius: 0.21"  position="0.0413 0.6812 -4.3994" scale="1 0.54 1"></a-entity> -->
+        <a-box height="0.35" material="color: #8a6060;  src="./resources/TCom_Leather_Plain09_header.jpg" geometry="" position="5 1.22146 0" scale="1 0.37 1.3">
+            <a-box height="5" material="" geometry="" position="-0.0057 1.82205 0.42565" scale="1 0.66 0.14"></a-box>
+            <a-cylinder radius="0.1" position="0.36468 -1.20137 -0.40361" material="metalness: 0.51" geometry="height: 1.52" scale="1.03 1.61 0.72">
+            </a-cylinder><a-cylinder radius="0.1" position="-0.38535 -1.20137 -0.404" material="metalness: 0.51" geometry="height: 1.52" scale="1.03 1.61 0.72">
+            </a-cylinder><a-cylinder radius="0.1" position="-0.385 -1.14804 0.41996" material="metalness: 0.51" geometry="height: 1.52" scale="1.03 1.61 0.72">
+            </a-cylinder><a-cylinder radius="0.1" position="0.365 -1.22597 0.41276" material="metalness: 0.51" geometry="height: 1.52" scale="1.03 1.61 0.72">
+            </a-cylinder></a-box>
+        
+<!-- new -->
+
+<a-cylinder radius="0.21" position="-2.80798 2.22311 -4.47403" scale="1 0.54 1" src="./resources//milo.jpg" material="" geometry="">
+        
+</a-cylinder>
+
+
+<a-cylinder radius="0.21" position="-2.80798 2.22311 -4.47403" scale="1 0.54 1" src="./resources//milo.jpg" material="" geometry="">
+
+</a-cylinder>
+
+<a-entity geometry="primitive: cylinder; height: 1.21; segmentsHeight: 17; radius: 0.24" position="-3.15111 2.12607 -3.97114" scale="0.72 0.34 0.74" layer="" real-world-meshing=""><a-entity material="shader: flat; transparent: true" geometry="primitive: plane; height: 0; width: 0">        <a-entity geometry="primitive: torus; radius: 0.48; radiusTubular: 0.05; segmentsTubular: 29; arc: 180" position="0.20278 0.11083 -0.05936" rotation="0 0 -89.93145552373402" scale="0.64 0.32 0.57"></a-entity>
+</a-entity><a-entity material="" geometry="" position="3.5468 1.87309 -1.95271"></a-entity><a-entity material="shader: flat; transparent: true" geometry="primitive: plane; height: 0; width: 0"></a-entity></a-entity>
+
+<!-- old -->
+        <a-cylinder radius="4" depth="1" height="0.3" rotation="180 0 0" position="-3.10357 1.83154 -3.79451" src="./resources/glass.jpg" material="" geometry="" scale="0.60788 0.62765 0.64524">
+            <a-box height="3" position="-2 1.36 0" rotation="0 45 0" material="" geometry=""></a-box>
+            <a-box height="3" position="0 1.36 2" material="" geometry=""></a-box>
+            <a-box height="3" position="2 1.36 0" rotation="0 45 0" material="" geometry=""></a-box>
+            <a-box height="3" position="0 1.36 -2" width="1" depth="1" material="" geometry="" scale="1 1 0.9618"></a-box>
         </a-cylinder>
     </a-scene>
 </body>
